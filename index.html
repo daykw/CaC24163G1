@@ -3,9 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu mejor amigo </title>
+    <script src="https://kit.fontawesome.com/42f6220ee6.js" crossorigin="anonymous"></script>
+    <title>Tu Mejor Amigo</title>
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-    
+    <header>
+            <nav class="navbar">
+                <!-- Menú de navegación -->
+                <div class="navbar-logo">
+                    <a href="index.html">
+                        <img class="logo-ppal" src="./static/img/logo.png" alt="Logo Tu Mejor Amigo">
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <ul class="navbar-list">
+                            <li class="navbar-item">
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="./templates/detail_pets.html">Mejores Amigos</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="./templates/adoption.html">Adoptar</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="./templates/colaborate.html">Colaborar</a>
+                            </li>
+                    </ul>  
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Banner -->
+<!--         <section id="banner" class="banner">
+            <div class="banner-img">
+                <div class="banner-text">
+                    <h1>Adoptá un Amigo</h1>
+                    <h2 class="section-title">tu amor cambia vidas</h2>
+                </div>
+            </div>
+        </section> -->
+        <!-- Información beneficios -->
+        <section id="benefits" class="benefits">
+            <h2 class="section-title">Beneficios de Adoptar</h2>
+            <div class="benefits-container">
+                <div class="section-text">
+                    <h3 class="section-subtitle">Físicos</h3>
+                    <img class="section-icon" src="./static/img/fuerte.png" alt="Beneficio Físico">
+                    <p>Caminar o jugar con tu mascota mejorará tu estado físico y emocional, ya que es una actividad que une a las personas con sus perros y gatos al tiempo que se ejercitan; lo que, dependiendo del tipo de actividad, se traduce en disminuir la presión arterial, los niveles de colesterol y los niveles de triglicéridos.</p>
+                </div>
+                <div class="section-text">
+                    <h3 class="section-subtitle">Salud</h3>
+                    <img class="section-icon" src="./static/img/perfecto.png" alt="Beneficio de Salud">
+                    <p>Las personas que conviven con mascotas suelen tener un sistema inmune más fuerte, lo que les ayuda a combatir enfermedades y a requerir menos visitas al médico. Por otra parte, se sabe que las personas que se recuperan de un ataque cardiaco tienen mayores tasas de supervivencia si cuentan con una mascota. Lo anterior también se aplica a las personas que sufren de una enfermedad crónica.</p>
+                </div>
+                <div class="section-text">
+                    <h3 class="section-subtitle">Emocionales</h3>
+                    <img class="section-icon" src="./static/img/amor.png" alt="Beneficio Emocional">
+                    <p>Las mascotas cuentan con un gran poder para hacernos felices gracias al amor incondicional que nos brindan, lo que beneficia en el plano emocional al ayudar a reducir el estrés y a brindar una excelente compañía para las personas que habitan en soledad. Además, la compañía de una mascota puede ayudar a las personas a superar duelos o traumas personales. Por otra parte, una mascota puede ayudar a que una persona con trastornos mentales se recupere. Los gatos y los perros a menudo son recomendados para seguir terapias de rehabilitación y bienestar humano. </p>
+                </div>
+                <div class="section-text">
+                    <h3 class="section-subtitle">Sociales</h3>
+                    <img class="section-icon" src="./static/img/la-risa.png" alt="Beneficio Social">
+                    <p>Salir con las mascotas podría ayudar a las personas a hacer amigos con mayor facilidad, siempre y cuando tu peludo amigo tenga el adiestramiento adecuado para convivir con otros animales y personas de la mejor manera.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Últimos animales ingresados -->
+        <section id="recent-pets" class="pet-list">
+            <h2 class="section-title">Recién Llegados</h2>
+            <div class="pet-list-container">
+                <div class="pet-card">
+                    <img class="pet-photo" src="./static/img/cat1.jpg" alt="Foto mascota 1">
+                    <div class="pet-card-body">
+                        <div>
+                            <h5 class="pet-name">Nombre</h5>
+                            <p class="pet-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.</p>
+                        </div>
+                        <div class="pet-adoption">
+                            <a class="adoption-btn" href="./templates/adoption.html" target="_blank">Adoptar</a>
+                        </div>
+                        <div class="pfriend">
+                            <a class="pfriend-btn" href="./templates/colaborate.html" target="_blank">Apadrinar</a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="pet-card">
+                    <img class="pet-photo" src="./static/img/cat2.jpg" alt="Foto mascota 2">
+                    <div class="pet-card-body">
+                        <div>
+                            <h5 class="pet-name">Nombre</h5>
+                            <p class="pet-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.</p>
+                        </div>
+                        <div class="pet-adoption">
+                            <a class="adoption-btn" href="./templates/adoption.html" target="_blank">Adoptar</a>
+                        </div>
+                        <div class="pfriend">
+                            <a class="pfriend-btn" href="./templates/colaborate.html" target="_blank">Apadrinar</a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="pet-card">
+                    <img class="pet-photo" src="./static/img/cat3.jpg" alt="Foto mascota 3">
+                    <div class="pet-card-body">
+                        <div>
+                            <h5 class="pet-name">Nombre</h5>
+                            <p class="pet-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.</p>
+                        </div>
+                        <div class="pet-adoption">
+                            <a class="adoption-btn" href="./templates/adoption.html" target="_blank">Adoptar</a>
+                        </div>
+                        <div class="pfriend">
+                            <a class="pfriend-btn" href="./templates/colaborate.html" target="_blank">Apadrinar</a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="pet-card">
+                    <img class="pet-photo" src="./static/img/dog1.jpg" alt="Foto mascota 4">
+                    <div class="pet-card-body">
+                        <div>
+                            <h5 class="pet-name">Nombre</h5>
+                            <p class="pet-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.</p>
+                        </div>
+                        <div class="pet-adoption">
+                            <a class="adoption-btn" href="./templates/adoption.html" target="_blank">Adoptar</a>
+                        </div>
+                        <div class="pfriend">
+                            <a class="pfriend-btn" href="./templates/colaborate.html" target="_blank">Apadrinar</a>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="show-more-btn">
+                    <a class="section-btn" href="./templates/detail_pets.html">Ver todos <i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+        </div>
+        </section>
+        <!-- Información básica adopción -->
+        <section id="adopt-info" class="adopt-info">
+            <div class="adopt-container">
+                <h2 class="section-title">Adoptá con Conciencia y Corazón</h2>
+                <div class="section-text">           
+                    <p>En Tu Mejor Amigo podrás encontrar perros, cachorros, gatos y gatitos en adopción procedentes de protectoras, asociaciones de animales o perreras. Si estás buscando adoptar o acoger un animal ¡estás en el sitio adecuado! Adoptá, salva una vida, ganá un Amigo para toda la vida.</p>
+                </div>
+                <div class="adopt-btn" >
+                    <a class="section-btn" href="./templates/adoption.html">Quiero Adoptar <i class="fa-solid fa-chevron-right"></i></a>
+                </div>   
+            </div>
+            <div class="adopt-img-container">
+                <img class="adopt-img" id="adopt-img" src="./static/img/happy-dogs.jpg" alt="Perros felices">
+            </div>           
+        </section>
+        <!-- Información básica colaboración -->
+        <section id="colab-info" class="colab-info">
+                <div class="colab-img-container">
+                    <img class="colab-img" id="colab-img" src="./static/img/kitten.jpg" alt="Gatitos">                      
+                </div>
+                <div class="colab-container">
+                    <h2 class="section-title">Colaborá con Tu Mejor Amigo</h2>
+                    <div class="section-text">
+                        <p>Adoptando, difundiendo, creando conciencia, transitando, siendo voluntario/a, participando. ¡Tu ayuda significa mucho para nosotros y nuestros Amigos!</p>
+                    </div>
+                    <div class="colab-btn">
+                        <a class="section-btn" href="./templates/colaborate.html">Quiero Colaborar <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>  
+                </div> 
+        </section>
+    </main>
+    <footer>
+       <!-- Footer ppal -->
+       <section class="footer-ppal">
+        <div class="footer-ppal-item">
+          <h2 class="footer-title">Contacto</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+                <p class="footer-subtitle">Atención Telefónica:</p>
+                <p class="footer-text">0-800-amigo-fiel</p>
+            </li>
+            <li class="footer-item">
+                <p class="footer-subtitle">Atención Whatsapp:</p>
+                <p class="footer-text">+54-911-1234-5678</p>
+            </li>
+            <li class="footer-item">
+                <p class="footer-text">Lunes a Sábados de 9 a 21 hs</p>
+                <p class="footer-text">Domingos de 10 a 20 hs</p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-ppal-item">
+          <h2 class="footer-title">Recursos</h2>
+          <ul class="footer-list">
+            <li class="footer-link"><a href="#" target="_blank">Perros</a></li>
+            <li class="footer-link"><a href="#" target="_blank">Gatos</a></li>
+          </ul>
+        </div>
+        <div class="footer-ppal-item">
+          <h2 class="footer-title">Recibí nuestras novedades</h2>
+          <p class="footer-text">Suscribite a nuestro Newsletter y enterate todo sobre nuestros amigos.</p>
+          <form>
+            <input type="email" name="email" placeholder="Ingresá tu email">
+            <input type="submit" value="Suscribirse">
+          </form>
+        </div>
+       </section>   
+       <!-- Footer social -->
+        <section class="footer-social">
+            <ul class="footer-social-list">
+                <li class="footer-social-item"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" style="color:grey;"></i></a></li>
+                <li class="footer-social-item"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter" style="color:grey;"></i></a></li>
+                <li class="footer-social-item"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" style="color:grey;"></i></a></li>
+                <li class="footer-social-item"><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" style="color:grey;"></i></a></li>
+              </ul>
+        </section>
+        <!-- Footer legal -->
+        <section class="footer-rights">
+            <ul class="footer-rights-list">
+                <li class="footer-rights-item"><a href="#openModal1">Términos &amp; Condiciones</a></li>
+                <li class="footer-rights-item"><a href="#openModal2">Política de Privacidad</a></li>
+                <li class="footer-rights-item">&copy; 2024 Tu Mejor Amigo - Derechos Reservados</li>
+            </ul>
+            <!-- Modal términos y condiciones -->
+            <div id="openModal1" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Términos &amp; Condiciones</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.</p>
+                </div>
+            </div>
+            <!-- Modal Políticas de privacidad -->
+            <div id="openModal2" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Política de Privacidad</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

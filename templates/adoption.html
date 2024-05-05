@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/42f6220ee6.js" crossorigin="anonymous"></script>
+    <title>Tu Mejor Amigo</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Menú de navegación -->
+            <div class="navbar-logo">
+                <a href="../index.html">
+                    <img class="logo-ppal" src="../static/img/logo.png" alt="Logo Tu Mejor Amigo">
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="./detail_pets.html">Mejores Amigos</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="./adoption.html">Adoptar</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="./colaborate.html">Colaborar</a>
+                        </li>
+                </ul>  
+        </nav>
+    </div>
+</header>
+    <main>
+        <!-- Información general para la adopción -->
+        <section id="adoption" class="adoption">
+                <div class="info-container">
+                    <h2 class="section-title">Información Importante</h2>
+                    <p>Si estás pensando sumar un amigo peludo tenés que saber el compromiso que esto implica. No sólo será tu compañía sino un integrante más de la familia por lo que te recomendamos planifiques bien su llegada, asegúrate que todos estén de acuerdo y que en tu edificio o casa se permitan mascotas.</p>
+                    <p>Evalúa el espacio disponible en tu hogar, el tiempo que puedes dedicar al juego y paseo, así como los costos asociados con la alimentación, atención veterinaria y cuidado durante las vacaciones. Asegúrate de que tu elección de mascota se ajuste a tu estilo de vida y a la cantidad de tiempo que puedes comprometer.</p>
+                    <p>Es importante recordar que un animal de compañía puede tener una vida promedio de entre 14 y 18 años, y durante todo ese tiempo dependerá de vos. Adoptar implica asumir la responsabilidad de su bienestar y felicidad a lo largo de su vida.</p>
+                </div>
+                <div class="process-container">
+                    <div class="proc-img">
+                        <img class="doubts-icon" src="../static/img/no-se.png" alt="Información importante">
+                    </div>
+                    <div class="proc-info">
+                        <h3 class="section-subtitle">Proceso de Adopción</h3>
+                        <ol class="proc-list">
+                            <li class="proc-item">Debes llenar el formulario de adopción en su totalidad. Por favor tómate el tiempo para dar respuesta amplias; las respuestas con monosílabos no nos permiten analizar la viabilidad de la solicitud.</li>
+                            <li class="proc-item">Si tu formulario es aprobado te contactaremos por medio de correo para programar una entrevista virtual de adopción, en donde tendremos una charla de tenencia responsable y esperamos conocerte más a fondo; al igual que ver el espacio donde viviría el animal.</li>
+                            <li class="proc-item">Los adoptantes deben asumir los gastos básicos como los son: esterilización, vacunas y desparasitación.</li>
+                            <li class="proc-item">Los adoptantes deben firmar un contrato de adopción al momento de la entrega oficial del animal, donde se comprometen a darle los cuidados necesarios que este requiera.</li>
+                        </ol>
+                    </div>
+                </div>
+        </section>
+        <!-- Formulario de solicitud de adopción -->
+        <section id="adoption-form" class="adoption-form">
+            <h2 class="section-title">Formulario de Postulación</h2>
+            <div class="form-container">
+            <form action="#" method="GET">
+                <div class="name-field">
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Ingresá tu Nombre" required>
+                </div>
+                <div class="lname-field">
+                    <label for="lname">Apellido:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Ingresá tu Apellido" required>
+                </div>
+                <div class="address">
+                    <label for="addr">Dirección:</label>
+                    <input type="text" name="addr" id="addr" placeholder="Dirección/Altura/Dpto">
+                </div>
+                <div class="city">
+                    <label for="city">Ciudad:</label>
+                    <input type="text" name="city" id="city" placeholder="Ciudad/Localidad">
+                </div>
+                <div class="province">
+                    <label for="province">Provincia:</label>
+                    <input type="text" name="province" id="province" placeholder="Provincia">
+                </div>
+                <div class="cp">
+                    <label for="cp">Código Postal:</label>
+                    <input type="text" name="cp" id="cp" placeholder="CP">
+                </div>
+                <div class="phone">
+                    <label for="phone">Teléfono:</label>
+                    <input type="text" name="phone" id="phone" placeholder="Teléfono">
+                </div>
+                <div class="email-field">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresá tu email" required>
+                </div>
+                <div class="age">
+                    <label for="age">Edad:</label>
+                    <input type="text" name="age" id="age" placeholder="Edad" required>
+                </div>
+                <div class="pet-category">
+                    <p>¿Qué tipo de animal te gustaría adoptar?</p>
+                    <input type="radio" id="pet-category" name="pet-category" value="Perro">
+                    <label for="dog-category">Perro</label>
+                    <input type="radio" id="pet-category" name="pet-category" value="Gato">
+                    <label for="cat-category">Gato</label>
+                </div>
+                <div class="pname-field">
+                    <label for="pname">¿Te interesó algún Amigo en particular?</label>
+                    <select name="pet-friend-name" id="pet-friend-name">
+                        <option value="1">Nombre 1</option>
+                        <option value="2">Nombre 2</option>
+                        <option value="3">Nombre 3</option>
+                        <option value="4">Nombre 4</option>
+                        <option value="5">Nombre 5</option>
+                        <option value="6">Nombre 6</option>
+                        <option value="7">Nombre 7</option>
+                        <option value="8">Nombre 8</option>
+                    </select>
+                </div>
+                <div class="home-type">
+                    <p>¿Vivis en?</p>
+                    <input type="radio" id="home-type" name="home-type" value="Casa">
+                    <label for="dog-category">Casa</label>
+                    <input type="radio" id="home-type" name="home-type" value="Departamento">
+                    <label for="cat-category">Departamento</label>
+                </div>
+                <div class="home-ok">
+                    <p>¿Están permitidas las mascotas dónde vivís?</p>
+                    <input type="radio" id="home-ok" name="home-ok" value="Si">
+                    <label for="home-ok">Si</label>
+                    <input type="radio" id="home-ok" name="home-ok" value="No">
+                    <label for="home-ok">No</label>
+                </div>
+                <div class="home-ok2">
+                    <p>¿Están todas las personas con quién convivis de acuerdo con Adoptar?</p>
+                    <input type="radio" id="home-ok2" name="home-ok" value="Si">
+                    <label for="home-ok2">Si</label>
+                    <input type="radio" id="home-ok2" name="home-ok" value="No">
+                    <label for="home-ok2">No</label>
+                </div>
+                <div class="home-ok3">
+                    <label for="home-ok3">¿Cuántas horas al día la mascota estaría sola?</label>
+                    <input type="text" name="home-ok3" id="home-ok3" placeholder="Cantidad de horas sin companía" required>
+                </div>
+                <div class="home-ok4">
+                    <label for="home-ok4">¿Hay otros animales en la casa? En caso que los haya, ¿están vacunados y/o castrados? ¿Cuáles son sus edades?</label>
+                    <textarea name="chome-ok4" id="home-ok4" placeholder="Descripción de las mascotas de la casa" required></textarea>
+                </div>
+                <div class="comment">
+                    <label for="comment">Contanos sobre tu experiencia con animales de companía y la razón por la que estás buscando adoptar un mejor amigo.</label>
+                    <textarea name="comment" id="comentario" placeholder="Quiero adoptar un amigo porque...." required></textarea>
+                </div>
+                <div class="req-adoption">
+                    <input type="checkbox" id="requirements" name="requirements">
+                    <label for="req-adoption">He léido y acepto los <a class="req-adopt" href="#openModal3">Requisitos de Adopción.</a></label>
+                </div>
+            <!-- Modal términos y condiciones -->
+             <div id="openModal3" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Requisitos de Adopción</h2>
+                    <ul>
+                        <li>Ser mayor de 21 años.</li>
+                        <li>Amar a las mascotas y poder dedicarle el tiempo que necesite.</li>
+                        <li>Estar bien predispuesto: te pedimos cargues tu solicitud, realices una entrevista con el especialistas y respondas a nuestro contacto.</li>
+                        <li>Los adoptantes deberán suscribir un contrato de adopción, comprometiéndose a garantizar una tenencia responsable a lo largo de la vida del animal.</li>
+                        <li>Los animales mayores de 6 meses se entregarán castrados. En el caso de adoptar un cachorro más joven, el adoptante se compromete a castrarlo entre los 6 meses y el primer año de edad, de manera obligatoria.</li>
+                        <li>Las adopciones están restringidas a la zona de Capital Federal y Gran Buenos Aires, Argentina, sujeto a consideración.</li>
+                        <li>Nos reservamos el derecho de aprobar o rechazar una postulación según los criterios y valores de nuestra organización.</li>
+                        <li>Los datos proporcionados por el postulante son confidenciales y se utilizan exclusivamente para el proceso de adopción, sin transferirse a terceros en ningún caso.</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="adopt-request">
+                    <input type="submit" value="Solicitar Adopción">
+                </div>
+            </form>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Footer ppal -->
+        <section class="footer-ppal">
+         <div class="footer-ppal-item">
+           <h2 class="footer-title">Contacto</h2>
+           <ul class="footer-list">
+             <li class="footer-item">
+                 <p class="footer-subtitle">Atención Telefónica:</p>
+                 <p class="footer-text">0-800-amigo-fiel</p>
+             </li>
+             <li class="footer-item">
+                 <p class="footer-subtitle">Atención Whatsapp:</p>
+                 <p class="footer-text">+54-911-1234-5678</p>
+             </li>
+             <li class="footer-item">
+                 <p class="footer-text">Lunes a Sábados de 9 a 21 hs</p>
+                 <p class="footer-text">Domingos de 10 a 20 hs</p>
+             </li>
+           </ul>
+         </div>
+         <div class="footer-ppal-item">
+           <h2 class="footer-title">Recursos</h2>
+           <ul class="footer-list">
+             <li class="footer-link"><a href="#" target="_blank">Perros</a></li>
+             <li class="footer-link"><a href="#" target="_blank">Gatos</a></li>
+           </ul>
+         </div>
+         <div class="footer-ppal-item">
+           <h2 class="footer-title">Recibí nuestras novedades</h2>
+           <p class="footer-text">Suscribite a nuestro Newsletter y enterate todo sobre nuestros amigos.</p>
+           <form>
+             <input type="email" name="email" placeholder="Ingresá tu email">
+             <input type="submit" value="Suscribirse">
+           </form>
+         </div>
+        </section>   
+        <!-- Footer social -->
+         <section class="footer-social">
+             <ul class="footer-social-list">
+                 <li class="footer-social-item"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" style="color:grey;"></i></a></li>
+                 <li class="footer-social-item"><a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter" style="color:grey;"></i></a></li>
+                 <li class="footer-social-item"><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram" style="color:grey;"></i></a></li>
+                 <li class="footer-social-item"><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube" style="color:grey;"></i></a></li>
+               </ul>
+         </section>
+         <!-- Footer legal -->
+         <section class="footer-rights">
+             <ul class="footer-rights-list">
+                 <li class="footer-rights-item"><a href="#openModal1">Términos &amp; Condiciones</a></li>
+                 <li class="footer-rights-item"><a href="#openModal2">Política de Privacidad</a></li>
+                 <li class="footer-rights-item">&copy; 2024 Tu Mejor Amigo - Derechos Reservados</li>
+             </ul>
+             <!-- Modal términos y condiciones -->
+             <div id="openModal1" class="modalDialog">
+                 <div>
+                     <a href="#close" title="Close" class="close">X</a>
+                     <h2>Términos &amp; Condiciones</h2>
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.</p>
+                 </div>
+             </div>
+             <!-- Modal Políticas de privacidad -->
+             <div id="openModal2" class="modalDialog">
+                 <div>
+                     <a href="#close" title="Close" class="close">X</a>
+                     <h2>Política de Privacidad</h2>
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio molestias commodi architecto non. Voluptatibus facere molestias a dolores deserunt, velit architecto commodi aspernatur, magni incidunt cumque modi quibusdam! Facilis, consectetur.</p>
+                 </div>
+             </div>
+         </section>
+     </footer>
+</body>
+</html>
