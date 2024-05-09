@@ -91,7 +91,7 @@ section p {
     font-weight: 500;
 }
 section li {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 /*Menú de Navegación*/
@@ -106,6 +106,11 @@ section li {
     height: 65%;
     width: 65%;
     margin-bottom: 1rem;
+}
+.logo-ppal:hover {
+    transform-style: preserve-3d;
+    transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg);
+    perspective: 300px;
 }
 .navbar-list {
     list-style: none;
@@ -127,22 +132,23 @@ section li {
 }
 
 /*Banner*/
-.banner-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner2.jpg");
-  height:50%;
-  margin-top: 2rem;
+.banner {
+   background-image: linear-gradient(rgba(84, 84, 84, 0.5), rgba(84, 84, 84, 0.5)), url("../img/banner2.jpg");
+  /* background-image: url("../img/banner2.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  height: 500px;
+  border-radius: 10px;
+  /* display: flex; */
+  overflow: hidden;
 }
-.banner-text {
+.banner-container {
         text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: rgb(205, 199, 199);
+        position: relative; 
+}
+.banner h1, .banner h2 {
+    color: whitesmoke;
 }
 
 /*Sección Beneficios*/
@@ -164,7 +170,14 @@ section li {
     border-style: none;
     vertical-align: center;
 }
-/*Secciones Adoptar*/
+
+/*Sección Amigos*/
+.pet-list {
+    background: linear-gradient(transparent 50%, var(--bg) 50%);
+    /* background: linear-gradient(var(--bg) 50%, transparent 50%); */
+}
+
+/*Sección Adoptar*/
 .adopt-info {
     display: flex;
     text-align: left;
@@ -186,110 +199,24 @@ section li {
     border-radius: 10px;
 }
 
-/*Secciones Colaborar*/
+/*Sección Colaborar*/
 .colab-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    /* background-color: #c2b9ea; */
 } 
 .colab-container {
     max-width: 100%;
     display: inline-block;
     padding: 10px 10px;
 }
-.adopt-info h2, .colab-info h2 {
-    text-align: left;
-}
 .colab-img-container {
     padding: 2rem;
     max-width: 50%;
 }
-
-/*Sección Amigos*/
-.pet-list {
-    background: linear-gradient(transparent 50%, var(--bg) 50%);
-    /* background: linear-gradient(var(--bg) 50%, transparent 50%); */
-}
-
-/*Filtro búsqueda*/
-.pet-search {
-    padding: 1em;
-    justify-content: space-between;
-    max-width: 42%;
-    text-align: center;
-    margin: auto;
-}
-.search-selector {
-    border: 2px solid #9388c6;
-    border-radius: 10px;
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-.search-card{
-    cursor: pointer;
-    background: transparent;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:  50%;
-    height: 50%;
-}
-.search-card img {
-    width: 100px;
-    height: 100px;
-}
-#cat:checked ~label[for="cat"]{
-    background: #c2b9ea;
-}
-#dog:checked ~label[for="dog"]{
-    background:  #c2b9ea;
-}
-
-/*Tarjetas animales en adopción*/
-.pet-list-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    grid-gap: 2rem;
-}
-.pet-card {
-    border: 1px solid #b4afcc;
-    border-radius: 10px;
-    font-size: 2rem;
-    text-align: center;
-}
-.pet-photo {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    height: 60%;
-    padding-top: 0;
-    margin-top: 0;
-    display: block; 
-}
-.pet-name{
-    font-size: large;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-.pet-card-body{
-    margin: 1rem;
-    word-wrap: break-word;
-    padding-top: 1rem;
-}
-
-/*Botones adopción y apadrinar*/
-.adoption-btn, .pfriend-btn {
-    display: inline-block;
-    background-color: #9388c6;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 15px;
-    border-radius: 10px;
+.adopt-info h2, .colab-info h2 {
+    text-align: left;
 }
 
 /*Adopción*/
@@ -507,11 +434,6 @@ input[type="textarea"] {
     font-style: italic;
     font-size: 12px;
 }
-/* input[type="image"] {
-    border: 0;
-    padding: 0.625rem;
-    margin-top: 0.3125rem;
-} */
 input[type="select"] {
     border: 0;
     padding: 0.625rem;
