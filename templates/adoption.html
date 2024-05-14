@@ -68,34 +68,42 @@
                     <label for="name">Nombre:</label>
                     <input type="text" name="firstname" id="firstname" placeholder="Ingresá tu Nombre" required>
                 </div>
+                <div class="error" id="error-name"></div>
                 <div class="lname-field">
                     <label for="lname">Apellido:</label>
                     <input type="text" name="lastname" id="lastname" placeholder="Ingresá tu Apellido" required>
                 </div>
+                <div class="error" id="error-lname"></div>
                 <div class="address">
                     <label for="addr">Dirección:</label>
                     <input type="text" name="addr" id="addr" placeholder="Dirección/Altura/Dpto">
                 </div>
+                <div class="error" id="error-addr"></div>
                 <div class="city">
                     <label for="city">Ciudad:</label>
                     <input type="text" name="city" id="city" placeholder="Ciudad/Localidad">
                 </div>
+                <div class="error" id="error-city"></div>
                 <div class="province">
                     <label for="province">Provincia:</label>
                     <input type="text" name="province" id="province" placeholder="Provincia">
                 </div>
+                <div class="error" id="error-province"></div>
                 <div class="cp">
                     <label for="cp">Código Postal:</label>
                     <input type="text" name="cp" id="cp" placeholder="CP">
                 </div>
+                <div class="error" id="error-cp"></div>
                 <div class="phone">
                     <label for="phone">Teléfono:</label>
                     <input type="text" name="phone" id="phone" placeholder="Teléfono">
                 </div>
+                <div class="error" id="error-phone"></div>
                 <div class="email-field">
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="Ingresá tu email" required>
                 </div>
+                <div class="error" id="error-email"></div>
                 <div class="age">
                     <label for="age">Edad:</label>
                     <input type="text" name="age" id="age" placeholder="Edad" required>
@@ -155,8 +163,9 @@
                 </div>
                 <div class="req-adoption">
                     <input type="checkbox" id="requirements" name="requirements">
-                    <label for="req-adoption">He léido y acepto los <a class="req-adopt" href="#openModal3">Requisitos de Adopción.</a></label>
+                    <label for="req-adoption">He leído y acepto los <a class="req-adopt" href="#openModal3">Requisitos de Adopción.</a></label>
                 </div>
+                <div class="error" id="error-requirements"></div>
             <!-- Modal términos y condiciones -->
              <div id="openModal3" class="modalDialog">
                 <div>
@@ -175,12 +184,13 @@
                 </div>
             </div>
                 <div class="adopt-request">
-                    <input type="submit" value="Solicitar Adopción">
+                    <button type="button" id="btn-solicitud">Solicitar Adopción</button>
                 </div>
             </form>
         </div>
         </section>
     </main>
+    <script src="../static/js/validate_adoption.js"></script>
     <footer>
         <!-- Footer ppal -->
         <section class="footer-ppal">
