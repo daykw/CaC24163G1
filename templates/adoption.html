@@ -63,136 +63,118 @@
         </section>
         <!-- Formulario de solicitud de adopción -->
         <section id="adoption-form" class="adoption-form">
-            <h2 class="section-title">Formulario de Postulación</h2>
+            <h2 class="section-title">Formulario de Adopción</h2>
             <div class="form-container">
-            <form action="#" method="GET">
-                <div class="name-field">
+                <form 
+                name="RegForm"
+                onsubmit="return validateForm()"
+            >
+                <p>
                     <label for="name">Nombre:</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="Ingresá tu Nombre" required>
-                </div>
-                <div class="error" id="error-name"></div>
-                <div class="lname-field">
-                    <label for="lname">Apellido:</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="Ingresá tu Apellido" required>
-                </div>
-                <div class="error" id="error-lname"></div>
-                <div class="address">
-                    <label for="addr">Dirección:</label>
-                    <input type="text" name="addr" id="addr" placeholder="Dirección/Altura/Dpto">
-                </div>
-                <div class="error" id="error-addr"></div>
-                <div class="city">
-                    <label for="city">Ciudad:</label>
-                    <input type="text" name="city" id="city" placeholder="Ciudad/Localidad">
-                </div>
-                <div class="error" id="error-city"></div>
-                <div class="province">
-                    <label for="province">Provincia:</label>
-                    <input type="text" name="province" id="province" placeholder="Provincia">
-                </div>
-                <div class="error" id="error-province"></div>
-                <div class="cp">
-                    <label for="cp">Código Postal:</label>
-                    <input type="text" name="cp" id="cp" placeholder="CP">
-                </div>
-                <div class="error" id="error-cp"></div>
-                <div class="phone">
-                    <label for="phone">Teléfono:</label>
-                    <input type="text" name="phone" id="phone" placeholder="Teléfono">
-                </div>
-                <div class="error" id="error-phone"></div>
-                <div class="email-field">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Ingresá tu email" required>
-                </div>
-                <div class="error" id="error-email"></div>
-                <div class="age">
-                    <label for="age">Edad:</label>
-                    <input type="text" name="age" id="age" placeholder="Edad" required>
-                </div>
-                <div class="pet-category">
-                    <p>¿Qué tipo de animal te gustaría adoptar?</p>
-                    <input type="radio" id="pet-category" name="pet-category" value="Perro">
-                    <label for="dog-category">Perro</label>
-                    <input type="radio" id="pet-category" name="pet-category" value="Gato">
-                    <label for="cat-category">Gato</label>
-                </div>
-                <div class="pname-field">
-                    <label for="pname">¿Te interesó algún Amigo en particular?</label>
-                    <select name="pet-friend-name" id="pet-friend-name">
-                        <option value="1">Nombre 1</option>
-                        <option value="2">Nombre 2</option>
-                        <option value="3">Nombre 3</option>
-                        <option value="4">Nombre 4</option>
-                        <option value="5">Nombre 5</option>
-                        <option value="6">Nombre 6</option>
-                        <option value="7">Nombre 7</option>
-                        <option value="8">Nombre 8</option>
+                    <input
+                        type="text"
+                        id="name"
+                        name="Name"
+                        placeholder="Ingresá tu nombre"
+                    />
+                    <span
+                        id="name-error"
+                        class="error-message"
+                    ></span>
+                </p>
+                <p>
+                    <label for="address"
+                        >Domicilio:</label
+                    >
+                    <input
+                        type="text"
+                        id="address"
+                        name="Address"
+                        placeholder="Ingresá tu domicilio"
+                    />
+                    <span
+                        id="address-error"
+                        class="error-message"
+                    ></span>
+                </p>
+                <p>
+                    <label for="email"
+                        >E-mail:</label
+                    >
+                    <input
+                        type="text"
+                        id="email"
+                        name="EMail"
+                        placeholder="Ingresá tu email"
+                    />
+                    <span
+                        id="email-error"
+                        class="error-message"
+                    ></span>
+                </p>
+                <p>
+                    <label for="subject"
+                        >Tipo de Mascota:</label
+                    >
+                    <select
+                        id="subject"
+                        name="Subject"
+                    >
+                        <option value="">
+                            Elegir Mascota
+                        </option>
+                        <option value="BTECH">
+                            Perro
+                        </option>
+                        <option value="BBA">
+                            Gato
+                        </option>
                     </select>
-                </div>
-                <div class="home-type">
-                    <p>¿Vivis en?</p>
-                    <input type="radio" id="home-type" name="home-type" value="Casa">
-                    <label for="dog-category">Casa</label>
-                    <input type="radio" id="home-type" name="home-type" value="Departamento">
-                    <label for="cat-category">Departamento</label>
-                </div>
-                <div class="home-ok">
-                    <p>¿Están permitidas las mascotas dónde vivís?</p>
-                    <input type="radio" id="home-ok" name="home-ok" value="Si">
-                    <label for="home-ok">Si</label>
-                    <input type="radio" id="home-ok" name="home-ok" value="No">
-                    <label for="home-ok">No</label>
-                </div>
-                <div class="home-ok2">
-                    <p>¿Están todas las personas con quién convivis de acuerdo con Adoptar?</p>
-                    <input type="radio" id="home-ok2" name="home-ok" value="Si">
-                    <label for="home-ok2">Si</label>
-                    <input type="radio" id="home-ok2" name="home-ok" value="No">
-                    <label for="home-ok2">No</label>
-                </div>
-                <div class="home-ok3">
-                    <label for="home-ok3">¿Cuántas horas al día la mascota estaría sola?</label>
-                    <input type="text" name="home-ok3" id="home-ok3" placeholder="Cantidad de horas sin companía" required>
-                </div>
-                <div class="home-ok4">
-                    <label for="home-ok4">¿Hay otros animales en la casa? En caso que los haya, ¿están vacunados y/o castrados? ¿Cuáles son sus edades?</label>
-                    <textarea name="chome-ok4" id="home-ok4" placeholder="Descripción de las mascotas de la casa" required></textarea>
-                </div>
-                <div class="comment">
-                    <label for="comment">Contanos sobre tu experiencia con animales de companía y la razón por la que estás buscando adoptar un mejor amigo.</label>
-                    <textarea name="comment" id="comentario" placeholder="Quiero adoptar un amigo porque...." required></textarea>
-                </div>
-                <div class="req-adoption">
-                    <input type="checkbox" id="requirements" name="requirements">
-                    <label for="req-adoption">He leído y acepto los <a class="req-adopt" href="#openModal3">Requisitos de Adopción.</a></label>
-                </div>
-                <div class="error" id="error-requirements"></div>
-            <!-- Modal términos y condiciones -->
-             <div id="openModal3" class="modalDialog">
-                <div>
-                    <a href="#close" title="Close" class="close">X</a>
-                    <h2>Requisitos de Adopción</h2>
-                    <ul>
-                        <li>Ser mayor de 21 años.</li>
-                        <li>Amar a las mascotas y poder dedicarle el tiempo que necesite.</li>
-                        <li>Estar bien predispuesto: te pedimos cargues tu solicitud, realices una entrevista con el especialistas y respondas a nuestro contacto.</li>
-                        <li>Los adoptantes deberán suscribir un contrato de adopción, comprometiéndose a garantizar una tenencia responsable a lo largo de la vida del animal.</li>
-                        <li>Los animales mayores de 6 meses se entregarán castrados. En el caso de adoptar un cachorro más joven, el adoptante se compromete a castrarlo entre los 6 meses y el primer año de edad, de manera obligatoria.</li>
-                        <li>Las adopciones están restringidas a la zona de Capital Federal y Gran Buenos Aires, Argentina, sujeto a consideración.</li>
-                        <li>Nos reservamos el derecho de aprobar o rechazar una postulación según los criterios y valores de nuestra organización.</li>
-                        <li>Los datos proporcionados por el postulante son confidenciales y se utilizan exclusivamente para el proceso de adopción, sin transferirse a terceros en ningún caso.</li>
-                    </ul>
-                </div>
-            </div>
-                <div class="adopt-request">
-                    <button type="button" id="btn-solicitud">Solicitar Adopción</button>
-                </div>
+                    <span
+                        id="subject-error"
+                        class="error-message"
+                    ></span>
+                </p>
+                <p>
+                    <label for="comment"
+                        >Contanos por qué queres adoptar:</label
+                    >
+                    <textarea
+                        id="comment"
+                        name="Comment"
+                    ></textarea>
+                </p>
+                <p>
+                    <input
+                        type="checkbox"
+                        id="agree"
+                        name="Agree"
+                    />
+                    <label for="agree"
+                        >Acepto las condiciones de adopción</label
+                    >
+                    <span
+                        id="agree-error"
+                        class="error-message"
+                    ></span>
+                </p>
+                <p>
+                    <input
+                        type="submit"
+                        value="Send"
+                        name="Submit"
+                    />
+                    <input
+                        type="reset"
+                        value="Reset"
+                        name="Reset"
+                    />
+                </p>
             </form>
-        </div>
+            </div>
         </section>
     </main>
-    <script src="../static/js/validate_adoption.js"></script>
+    <script src="../static/js/validate_form.js"></script>
     <footer>
         <!-- Footer ppal -->
         <section class="footer-ppal">
