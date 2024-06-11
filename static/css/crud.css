@@ -1,0 +1,86 @@
+html {
+    background-color: goldenrod;
+}
+:root {
+    --bg: goldenrod;
+}
+.crud-form {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: middle; 
+    justify-content:space-around;
+    font-size: 16px;
+    color: #363672;
+    align-content: center;
+}
+input[type="buscar"] {
+    background-color: #9388c6;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+input[type="eliminar"] {
+    background-color: #9388c6;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+input[type="actualizar"] {
+    background-color: #9388c6;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+input[type="textarea"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    font-style: italic;
+}
+input[type="url"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    font-style: italic;
+}
+input[type="select"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    font-style: italic;
+}
+input[type="number"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+    font-style: italic;
+}
+.form-container a {
+    color: #363672;
+    font-size: 18px;
+}
+.form-container a:hover {
+    color:#c2b9ea;
+    font-weight: 500;
+}
+.error-message {
+    color: black;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 600;
+}

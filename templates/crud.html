@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./static/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42f6220ee6.js" crossorigin="anonymous"></script>
+    <title>Tu Mejor Amigo</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/crud.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Menú de navegación -->
+            <div class="navbar-logo">
+                <a href="../index.html">
+                    <img class="logo-ppal" src="../static/img/logo.png" alt="Logo Tu Mejor Amigo">
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <ul class="navbar-list">
+                        <li class="navbar-item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="../templates/crud.html">Gestión de Mascotas</a>
+                        </li>
+                </ul>  
+        </nav>
+    </div>
+</header>
+    <main>
+        <!-- Banner -->
+        <section id="banner" class="banner">
+            <div class="banner-container">
+            </div>
+        </section>
+        <!-- Formulario de gestión -->
+        <section id="crud-form" class="crud">
+            <h2 class="section-title">Gestión de Mascotas</h2>
+            <div class="crud-form">
+                <form name="crudForm" action="">
+                <div>
+                    <label for="pname">Nombre:</label>
+                    <input type="text" id="pname" name="pname" placeholder="Nombre mascota"/>
+                    <span id="pname-error" class="error-message"></span>
+                </div>
+                <div>
+                    <label for="ptype">Tipo:</label>
+                    <select id="ptype" name="ptype">
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="pgender">Sexo:</label>
+                    <select id="pgender" name="pgender">
+                        <option value="macho">Macho</option>
+                        <option value="hembra">Hembra</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="psize">Tamaño:</label>
+                    <select id="psize" name="pzise">
+                        <option value="chico">Chico</option>
+                        <option value="mediano">Mediano</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="p-age">Edad:</label>
+                    <select id="p-age" name="p-age">
+                        <option value="cachorro">Menos de 1 año</option>
+                        <option value="adulto">Entre 1 año y 10 años</option>
+                        <option value="adulto-mayor">Mayor de 10 años</option>
+                    </select>
+                    <!-- <input type="number" id="p-age" name="p-age" placeholder="Edad"> -->
+                </div>
+                <div>
+                    <label for="pdescription">Descripción:</label>
+                    <textarea id="pdescription" name="pdescription"></textarea>
+                </div>
+                <div>
+                    <label for="p-photo">URL Foto:</label>
+                    <input type="url" id="p-photo" name="p-photo"/>
+                </div>
+                <div class="crud-btn">
+                    <input type="buscar" value="Buscar" name="Search"/>
+                    <input type="actualizar" value="Actualizar" name="Save"/>
+                    <input type="eliminar" value="Eliminar" name="Delete"/>
+                </div>
+            </form>
+            </div>
+        </section>
+        <!-- Visualizador de Tarjetas de Mascotas -->
+        <section id="crud-list" class="pet-list">
+        </section>
+    </main>
+    <script src="../static/js/crud.js"></script>
+<footer>
+</footer>
+</body>
+</html>
