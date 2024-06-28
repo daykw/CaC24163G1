@@ -40,66 +40,77 @@
             </div>
         </section>
         <!-- Formulario de gestión -->
-        <section id="crud-form" class="crud">
+        <section class="crud">
             <h2 class="section-title">Gestión de Mascotas</h2>
-            <div class="crud-form">
-                <form name="crudForm" action="">
-                <div>
-                    <label for="pname">Nombre:</label>
-                    <input type="text" id="pname" name="pname" placeholder="Nombre mascota"/>
-                    <span id="pname-error" class="error-message"></span>
-                </div>
-                <div>
-                    <label for="ptype">Tipo:</label>
-                    <select id="ptype" name="ptype">
-                        <option value="perro">Perro</option>
-                        <option value="gato">Gato</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="pgender">Sexo:</label>
-                    <select id="pgender" name="pgender">
-                        <option value="macho">Macho</option>
-                        <option value="hembra">Hembra</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="psize">Tamaño:</label>
-                    <select id="psize" name="pzise">
-                        <option value="chico">Chico</option>
-                        <option value="mediano">Mediano</option>
-                        <option value="grande">Grande</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="p-age">Edad:</label>
-                    <select id="p-age" name="p-age">
-                        <option value="cachorro">Menos de 1 año</option>
-                        <option value="adulto">Entre 1 año y 10 años</option>
-                        <option value="adulto-mayor">Mayor de 10 años</option>
-                    </select>
-                    <!-- <input type="number" id="p-age" name="p-age" placeholder="Edad"> -->
-                </div>
-                <div>
-                    <label for="pdescription">Descripción:</label>
-                    <textarea id="pdescription" name="pdescription"></textarea>
-                </div>
-                <div>
-                    <label for="p-photo">URL Foto:</label>
-                    <input type="url" id="p-photo" name="p-photo"/>
-                </div>
-                <div class="crud-btn">
-                    <input type="buscar" value="Buscar" name="Search"/>
-                    <input type="actualizar" value="Actualizar" name="Save"/>
-                    <input type="eliminar" value="Eliminar" name="Delete"/>
-                </div>
-            </form>
-            </div>
+            <h3>En esta sección se gestionan los Amigos en adopción.</h3>
+                <form action="#" id="crud-form">
+                    <div class="d-flex">
+                        <div class="form-control d-flex-column">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre"/>
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="tipo">Tipo:</label>
+                            <select id="tipo" name="tipo">
+                                <option value="perro">Perro</option>
+                                <option value="gato">Gato</option>
+                            </select>
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="sexo">Sexo:</label>
+                            <select id="sexo" name="sexo">
+                                <option value="macho">Macho</option>
+                                <option value="hembra">Hembra</option>
+                            </select>
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="tamanio">Tamaño:</label>
+                            <select id="tamanio" name="tamanio">
+                                <option value="chico">Chico</option>
+                                <option value="mediano">Mediano</option>
+                                <option value="grande">Grande</option>
+                            </select>
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="e-mascota">Edad:</label>
+                            <input type="number" name="e-mascota" id="e-mascota" min="1" max="50">
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="descripcion">Descripción:</label>
+                            <textarea id="descripcion" name="descripcion"></textarea>
+                        </div>
+                        <div class="form-control d-flex-column">
+                            <label for="url-foto">URL Foto:</label>
+                            <input type="url" id="url-foto" name="url-foto"/>
+                        </div>
+                            <input type="hidden" id="id_mascota" name="id_mascota"/>
+                            <button class="pet-btn" type="button" id="btn-save-mascota">Agregar</button>
+                    </div>
+                </form>
         </section>
         <!-- Visualizador de Tarjetas de Mascotas -->
         <section id="crud-list" class="pet-list">
+            <h2>Mejores Amigos</h3>
+            <table id="list-mascotas" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Tipo</th>
+                        <th>Sexo</th>
+                        <th>Tamaño</th>
+                        <th>Edad</th>
+                        <th>Descripción</th>
+                        <th>Foto</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-mascotas">
+                    
+                </tbody>
+            </table>
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../static/js/crud.js"></script>
 <footer>
 </footer>
