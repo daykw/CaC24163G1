@@ -44,7 +44,7 @@ async function showMascotas(){
                     <td>${mascota.edad}</td>
                     <td>${mascota.descripcion}</td>
                     <td>
-                        <img src="${mascota.url_foto}" width="30%">
+                        <img class="pet-img" src="${mascota.url_foto}" width="30%">
                     </td>
                     <td>
                         <button class="pet-btn" onclick='updateMascota(${mascota.id_mascota})'><i class="fa fa-pencil" ></button></i>
